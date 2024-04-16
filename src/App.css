@@ -1,0 +1,17 @@
+/* App.css */
+.appContainer {
+    display: flex; 
+}
+
+.form1 {
+    width: 70%;
+    height: 1024px;
+    order: 2;
+}
+
+.form2 {
+    width: 30%;
+    height: 1024px;
+    order: 1;
+    background-color: #F2D284;
+}
