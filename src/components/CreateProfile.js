@@ -78,13 +78,15 @@ function CreateProfile() {
                     src="/sch.png"
                     alt="Dribbble Logo"
                     className="w-40 h-40 mb-4"
-                    style={{ marginLeft: "0px", marginTop: "0px" }}
+                    style={{ marginLeft: "3%", marginTop: "1%px" }}
                 />
-                <h2 className="text-3xl font-bold text-gray-800 mb-2 " style={{ marginLeft: "18%" }}>Welcome! Let's Create Your Profile</h2>
-                <p className="text-sm text-gray-600 mb-4" style={{ marginLeft: "18%" }}>Let others get to know you better! You can do this later.</p>
+                <h2 className="text-3xl font-bold text-gray-800 mb-2 " style={{ marginLeft: "25%" }}>Welcome! Let's Create Your Profile</h2>
+                <p className="text-sm text-gray-600 mb-4" style={{ marginLeft: "25%" }}>Let others get to know you better! You can do this later.</p>
             </div>
 
-            <form onSubmit={handleSubmit} className="w-full max-w-md" style={{ marginLeft: "18%" }}>
+            <form onSubmit={handleSubmit} className="w-full max-w-md" style={{ marginLeft: "25%" }}>
+                <br />
+                <h1>Add An Avatar</h1>
                 {/* Avatar and Choose Image Button */}
                 <div className="flex items-center justify-center mb-4">
                     <div className="mr-4">
@@ -104,7 +106,7 @@ function CreateProfile() {
                             />
                         )}
                     </div>
-                    <label htmlFor="profileImage" className="cursor-pointer bg-white-200 rounded-full px-4 py-2 border border-gray-300">
+                    <label htmlFor="profileImage" className="cursor-pointer bg-white-200 rounded-full px-8 py-2 border border-gray-300">
                         Choose Image
                         <input
                             type="file"
@@ -114,8 +116,13 @@ function CreateProfile() {
                             className="hidden"
                         />
                     </label>
+                    <br />
                 </div>
-
+                <p className="text-sm text-gray-600 mb-4" style={{marginLeft : "58%", marginTop : "-15%"}}> > or choose one of our defaults </p>
+                <br />
+                <br />
+                <br />
+                <br />
                 {/* Location Input */}
                 <div className="mb-4">
                     <label htmlFor="location" className="block text-sm font-medium text-gray-700">Add your location:</label>
@@ -124,14 +131,14 @@ function CreateProfile() {
                         id="location"
                         value={locationInput}
                         onChange={(e) => setLocationInput(e.target.value)}
-                        className="mt-1 px-4 py-2 border rounded-md w-full focus:outline-none"
+                        className="w-full h-10 border-0 border-b-2 border-gray-300 focus:border-blue-500 outline-none"
                         placeholder="Enter your location"
-                    />
+                        />
                 </div>
                 <div>
                     <button
                         type="submit"
-                        className="w-full bg-blue-500 text-white px-6 py-3 rounded-md hover:bg-blue-600 transition duration-300"
+                        className="w-half bg-customPink text-white px-6 py-3 rounded-md hover:bg-blue-600 transition duration-300"
                     >
                         Create Profile
                     </button>
