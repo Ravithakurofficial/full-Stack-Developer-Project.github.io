@@ -26,7 +26,7 @@ function Signup() {
     };
 
     return (
-        <div className="min-h-screen flex flex-col md:flex-row justify-between bg-white">
+        <div className="min-h-screen flex flex-col md:flex-row justify-between bg-white container fixed">
             {/* Banner on the left (for medium screens and larger) */}
             <div className="hidden md:block w-1/3 bg-customYellow p-8">
                 <Banner />

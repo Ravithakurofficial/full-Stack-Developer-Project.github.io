@@ -6,3 +6,4 @@ require('./app');
 
 // Run server.js (to start the Express server)
 require('./server');
+
